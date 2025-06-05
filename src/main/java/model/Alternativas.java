@@ -1,5 +1,6 @@
 package model;
 
+
 public class Alternativas {
 	
 	
@@ -7,17 +8,20 @@ public class Alternativas {
 	Pergunta pergunta;
 	private String texto;
 	
-	
-	public Alternativas() {
 		
+	public Alternativas() {
+		super();
 	}
-	
-	
 	public Alternativas(Integer id, Pergunta pergunta, String texto) {
 		super();
 		this.id = id;
 		this.pergunta = pergunta;
 		this.texto = texto;
+	}
+		
+	@Override
+	public String toString() {
+		return "Alternativas [id=" + id + ", pergunta=" + pergunta + ", texto=" + texto + "]";
 	}
 	public Integer getId() {
 		return id;
@@ -39,5 +43,6 @@ public class Alternativas {
 	}
 	
 	
-
+	
+	
 }

@@ -1,13 +1,19 @@
 package service;
 
+//Trataremos aqui tudo que vem do front para o repositorio
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+import dto.ResultadoDTO;
 import enumeration.TipoNivelPergunta;
 import factory.PerguntaFactory;
 import model.Pergunta;
+
+
+
 
 public class AvaliacaoService {
 	
@@ -25,8 +31,8 @@ public class AvaliacaoService {
     }
 
     /*
-    public ResultadoDTO avaliarResposta(com.seuusuario.avaliacao.dto.RespostaDTO respostaDTO) {
-        Pergunta pergunta = listaPerguntas.get(respostaDTO.getIndex());
+    public ResultadoDTO avaliarResposta(ResultadoDTO respostaDTO) {
+        Pergunta pergunta = listaPerguntas.get(respostaDTO.getExperienciagetIndex());
         String respostaCorreta = pergunta.getRespostaCorreta();
         String respostaUsuario = respostaDTO.getRespostaUsuario();
 
